@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="723d7cfa-7b4f-408b-ac4b-a774b4780989" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/views/gallery.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/views/gallery.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/views/layouts/default.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/views/layouts/default.hbs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gallery.hbs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gallery.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/views/gallery.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="510">
+              <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -30,11 +31,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="default.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/views/layouts/default.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="114" selection-start-line="9" selection-start-column="114" selection-end-line="9" selection-end-column="114" />
+            <state relative-caret-position="540">
+              <caret line="36" column="82" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -59,8 +60,8 @@
       <list>
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/public/styles/site.scss" />
-        <option value="$PROJECT_DIR$/templates/views/gallery.hbs" />
         <option value="$PROJECT_DIR$/templates/views/layouts/default.hbs" />
+        <option value="$PROJECT_DIR$/templates/views/gallery.hbs" />
       </list>
     </option>
   </component>
@@ -203,12 +204,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527079062008</updated>
       <workItem from="1527079063192" duration="105000" />
-      <workItem from="1527079200037" duration="9011000" />
+      <workItem from="1527079200037" duration="9234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9116000" />
+    <option name="totallyTimeSpent" value="9339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -286,17 +287,17 @@
     <entry file="file://$PROJECT_DIR$/templates/views/partials/pagination.hbs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/gallery.hbs">
+    <entry file="file://$PROJECT_DIR$/templates/views/layouts/default.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="540">
+          <caret line="36" column="82" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/layouts/default.hbs">
+    <entry file="file://$PROJECT_DIR$/templates/views/gallery.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="114" selection-start-line="9" selection-start-column="114" selection-end-line="9" selection-end-column="114" />
+        <state relative-caret-position="510">
+          <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
         </state>
       </provider>
     </entry>

@@ -1,15 +1,3 @@
-<style>
-	@media only screen and (min-width: 600px) {
-		.zoom {
-			transition: transform .3s; /* Animation */
-			margin: 0 auto;
-		}
-
-		.zoom:hover {
-			transform: scale(1.3);
-		}
-	}
-</style>
 <div class="container">
 	<h1>Gallery</h1>
 </div>
@@ -32,7 +20,7 @@
 						{{#each images}}
 						<li class="masonry-item grid">
 							<figure>
-							<img src="{{cloudinaryUrl}}" class="zoom img-responsive">
+							<img src="{{cloudinaryUrl}}" class="card img-responsive">
 							</figure>
 						</li>
 						{{/each}}

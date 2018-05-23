@@ -8,9 +8,11 @@
 	<!-- if galleries -->
 	{{#if galleries}}
 		{{#each galleries}}
-		<!--<h2>-->
-			<!--<div class="pull-right text-muted">19th May 2014</div>-->
-		<!--</h2>-->
+		<h2>{{name}}
+			<div class="pull-right text-muted">
+				<p>last updated on {{publishedDate}}</p>
+			</div>
+		</h2>
 				<!--{{!#if heroImage}}-->
 				<!--<div class="col-sm-4 col-md-4">-->
 					<!--<img src="{{!cloudinaryUrl heroImage width='680' height='680'}}" class="img-rounded">-->

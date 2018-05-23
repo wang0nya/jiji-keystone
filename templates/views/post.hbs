@@ -13,6 +13,7 @@
 				</header>
 				<div class="post">
 					{{#if data.post.image}}<img src="{{{cloudinaryUrl data.post.image width=750 height=450 crop='fit' }}}" class="img-responsive">{{/if}}
+					<br>
 					{{{data.post.content.extended}}}
 				</div>
 			</article>

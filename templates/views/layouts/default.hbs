@@ -13,7 +13,7 @@
 		<link href="/styles/nucleo-icons.css" rel="stylesheet">
 		<link href="/styles/responsive.css" rel="stylesheet">
 		<link href="/styles/gallery/foundation.min.css" rel="stylesheet">
-		<link href="/styles/gallery/set1.css" rel="stylesheet">
+		<!--<link href="/styles/gallery/set1.css" rel="stylesheet">-->
 
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
 			- only renders when user is logged in and admin--}}
@@ -28,37 +28,40 @@
 
 	</head>
 	<body>
-		<div id="header">
-			<div class="container">
-				<div role="navigation" class="navbar navbar-default">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-							</button>
-							<a href="/" class="navbar-brand">jiji</a>
+	<header id="header" class="header">
+		<div class="container-fluid">
+			<hgroup>
+
+				<!-- logo -->
+
+				<h1> <a href="/" title="Jiji"><img src="images/logo.png" alt="logo"/></a> </h1>
+
+				<!-- logo -->
+
+				<!-- nav -->
+				<nav>
+					<div class="menu-expanded">
+						<div class="nav-icon">
+							<div id="menu" class="menu"></div>
+							<p>menu</p>
 						</div>
-						<div class="collapse navbar-collapse">
-							<ul class="nav navbar-nav navbar-left">
-									{{# each navLinks}}
+						<div class="cross"> <span class="linee linea1"></span> <span class="linee linea2"></span> <span class="linee linea3"></span> </div>
+						<div class="main-menu">
+							<ul>
+								{{# each navLinks}}
 									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 										<a href="{{ href }}">{{ label }}</a>
 									</li>
 								{{/each}}
 							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								{{#if user}}
-								<li><a href="/keystone/signout">Sign Out</a></li>
-								{{else}}
-								<li><a href="/keystone/signin">Sign In</a></li>
-								{{/if}}
-							</ul>
 						</div>
 					</div>
-				</div>
-			</div>
+				</nav>
+				<!-- nav -->
+
+			</hgroup>
 		</div>
+	</header>
 		<div id="body">
 			<!--
 				Flash messages allow you to display once-off status messages to users, e.g. form

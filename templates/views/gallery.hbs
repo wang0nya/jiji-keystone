@@ -1,32 +1,46 @@
+<style>
+	@media only screen and (min-width: 600px) {
+		.zoom {
+			transition: transform .3s; /* Animation */
+			margin: 0 auto;
+		}
+
+		.zoom:hover {
+			transform: scale(1.3);
+		}
+	}
+</style>
 <div class="container">
 	<h1>Gallery</h1>
 </div>
-<div class="container">
+<main class="main-wrapper" id="container">
+
+	<!-- image Gallery -->
+	<div class="wrapper container">
 	<!-- if galleries -->
 	{{#if galleries}}
 		{{#each galleries}}
-		<h2>{{name}}
-			<div class="pull-right text-muted">19th May 2014</div>
-		</h2>
-		<div class="row gallery-images">
-				{{#if heroImage}}
-				<div class="col-sm-4 col-md-4 gallery-image">
-					<img src="{{cloudinaryUrl heroImage width='680' height='680'}}" class="img-rounded">
-				</div>
-				{{/if}}
-				<div class="col-sm-8 col-md-8">
-					<div class="row">
+		<!--<h2>-->
+			<!--<div class="pull-right text-muted">19th May 2014</div>-->
+		<!--</h2>-->
+				<!--{{!#if heroImage}}-->
+				<!--<div class="col-sm-4 col-md-4">-->
+					<!--<img src="{{!cloudinaryUrl heroImage width='680' height='680'}}" class="img-rounded">-->
+				<!--</div>-->
+				<!--{{!/if}}-->
+				<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2 masonry">
 						{{#each images}}
-						<div class="col-xs-4 col-sm-4 col-md-3 gallery-image">
-							<img src="{{cloudinaryUrl width='300' height='300'}}" class="img-rounded">
-						</div>
+						<li class="masonry-item grid">
+							<figure>
+							<img src="{{cloudinaryUrl}}" class="zoom img-responsive">
+							</figure>
+						</li>
 						{{/each}}
-					</div>
-				</div>
-		</div>
+				</ul>
 		{{/each}}
 	{{else}}
 	<!-- else -->
 	<h3 class="text-muted">There are no image galleries yet.</h3>
 	{{/if}}
-</div>
+	</div>
+</main>

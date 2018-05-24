@@ -11,11 +11,11 @@
 		<h2>{{name}}
 		</h2>
 				<div class="card-description">
-					<p><strong>Descripltion:</strong> {{#if description}}{{description}}{{/if}}</p>
+					<p>{{#if description}}<strong>Descripltion:</strong> {{description}}{{/if}}</p>
 					<br>
-					<p><strong>Photographer:</strong> {{#if photographer}}{{photographer}}{{/if}} <span>{{#if twitter}}<a href="{{twitter}}" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>{{/if}}</span> <span>{{#if instagram}}<a href="{{instagram}}" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>{{/if}}</span></p>
+					<p>{{#if photographer}}<strong>Photographer:</strong> {{photographer}}{{/if}} <span>{{#if twitter}}<a href="{{twitter}}" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>{{/if}}</span> <span>{{#if instagram}}<a href="{{instagram}}" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>{{/if}}</span></p>
 					<br>
-					<p><strong>Camera:</strong> {{#if camera}}{{camera}}{{/if}} <span><em>Lens: {{#if lens}}{{lens}}{{/if}}</em></span></p>
+					<p>{{#if camera}}<strong>Camera:</strong> {{camera}}{{/if}} {{#if lens}}<span><em>Lens: {{lens}}{{/if}}</em></span></p>
 					<p class="text-muted"><em>last updated on {{publishedDate}}</em></p>
 			</div>
 				<!--{{!#if heroImage}}-->

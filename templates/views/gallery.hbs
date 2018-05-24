@@ -9,11 +9,7 @@
 	{{#if galleries}}
 		{{#each galleries}}
 		<h2>{{name}}
-			<div class="pull-right text-muted">
-				<p data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Details</p>
-			</div>
 		</h2>
-			<div class="collapse" id="collapseExample">
 				<div class="card-description">
 					<p><strong>Descripltion:</strong> {{#if description}}{{description}}{{/if}}</p>
 					<br>
@@ -21,7 +17,6 @@
 					<br>
 					<p><strong>Camera:</strong> {{#if camera}}{{camera}}{{/if}} <span><em>Lens: {{#if lens}}{{lens}}{{/if}}</em></span></p>
 					<p class="text-muted"><em>last updated on {{publishedDate}}</em></p>
-				</div>
 			</div>
 				<!--{{!#if heroImage}}-->
 				<!--<div class="col-sm-4 col-md-4">-->

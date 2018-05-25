@@ -61,6 +61,9 @@ keystone.set('nav', {
 	users: 'users',
 });
 
+// Cloudinary setup
+keystone.set('cloudinary config', { cloud_name: 'kwangonya', api_key: '896213827437316', api_secret: 'Xf11K0YRzPfx27MOvphCW4Ie9d0' });
+
 // Start Keystone to connect to your database and initialise the web server
 
 
